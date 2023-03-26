@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="history.css" />
+
+    <title>HTMLs Historia & DOM</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <h1 class="header-caption">HTMLs Historia & Dokumentobjektmodellen</h1>
+      <nav class="primary-navigation">
+        <ul class="primary-navigation__links">
+          <li><a class="nav-link" href="#">Hem</a></li>
+          <li><a class="nav-link" href="#HTMLs Historia">Historia av html.</a></li>
+          <li><a class="nav-link" href="#Dom">Hur funkar Dom?</a></li>
+          <li><a class="nav-link" href="#Lagar och regler">Lagar och regler</a></li>
+        </ul>
+      </nav>
+    </header>
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <main class="main-content">
+      <section class="main-content__history">
+        <header class="header-html">
+          <h2 id="HTMLs Historia" class="text-1">HTMLs Historia</h2>
+        </header>
+        <p>
+          Under de första fem åren (1990-1995) gick HTML igenom ett antal
+          revisioner och fick ett antal tillägg, främst värd först på CERN och
+          sedan på IETF.
+        </p>
+        <p>
+          Med skapandet av W3C ändrades HTMLs utvecklingsplats igen. Ett första
+          misslyckat försök att utöka HTML 1995, känd som HTML 3.0, gjorde sedan
+          plats för en mer praktisk metod känd som HTML 3.2, som slutfördes
+          1997. HTML4 följde snabbt senare samma år.
+        </p>
+        <img
+          class="inline-image"
+          src="/bilder/Skärmbild 2022-11-23 104721.png"
+          alt="Yahoo 1995"
+        />
+        <p>
+          Året därpå beslutade W3C-medlemskapet att sluta utveckla HTML och
+          istället börja arbeta på en XML-baserad motsvarighet, kallad XHTML.
+          Detta försök började med en omformulering av HTML4 i XML, känd som
+          XHTML 1.0, som inte lade till några nya funktioner förutom den nya
+          serialiseringen, och som slutfördes 2000. Efter XHTML 1.0 vändes W3C:s
+          fokus till att göra det lättare för andra arbetsgrupper att utöka
+          XHTML, under flaggan XHTML Modularization. Samtidigt med detta
+          arbetade W3C också på ett nytt språk som inte var kompatibelt med de
+          tidigare HTML- och XHTML-språken, kallar det XHTML2.
+        </p>
+        <p>
+          Runt den tid då HTMLs utveckling stoppades 1998 specificerades delar
+          av API:et för HTML utvecklat av webbläsarleverantörer och publicerades
+          under namnet DOM Level 1 (1998) och DOM Level 2 Core och DOM Level 2
+          HTML (med start 2000 och som kulminerade 2003). Dessa ansträngningar
+          försvann sedan, med några DOM nivå 3-specifikationer publicerade 2004
+          men arbetsgruppen stängdes innan alla nivå 3-utkast var färdiga.
+        </p>
+        <img
+          class="inline-image"
+          src="bilder/Skärmbild 2022-11-25 123133.png"
+          alt="Google 1998"
+        />
+        <h2 id="Dom">Hur fungerar webben och vad är DOM?</h2>
+        <p>
+          2003 väckte publiceringen av XForms, en teknik som var positionerad
+          som nästa generation av webbformulär, ett förnyat intresse för att
+          utveckla HTML i sig, snarare än att hitta ersättare för det. Detta
+          intresse kom från insikten att XML:s distribution som webbteknik var
+          begränsad till helt nya teknologier (som RSS och senare Atom), snarare
+          än som en ersättning för befintliga distribuerade tekniker (som HTML).
+        </p>
+        <img
+          class="inline-image "
+          src="/bilder/Skärmbild 2022-12-02 125345.png"
+          alt="document object model schematic"
+        />
+        <p>
+          Ett “proof of concept” för att visa att det var möjligt att utöka
+          HTML4s formulär för att tillhandahålla många av de funktioner som
+          XForms 1.0 introducerade, utan att webbläsare skulle behöva
+          implementera renderingsmotorer som var inkompatibla med befintliga
+          HTML-webbsidor, var det första resultatet av detta förnyade intresse.
+          I detta tidiga skede, medan utkastet redan var allmänt tillgängligt
+          och input redan begärdes från alla källor, var specifikationen endast
+          under Opera Softwares upphovsrätt.
+        </p>
+      </section>
+      <section id="dom" class="main-content__dom">
+        <header class="header-dom">
+          <p class="text-1">
+            Idén att HTMLs utveckling skulle återupptas testades vid en
+            W3C-workshop 2004, där några av principerna som ligger till grund
+            för HTML5-arbetet (beskrivs nedan), såväl som det tidigare nämnda
+            tidiga förslaget som täcker bara formulärrelaterade funktioner,
+            presenterades för W3C gemensamt av Mozilla och Opera. Förslaget
+            avslogs med motiveringen att förslaget stred mot den tidigare valda
+            riktningen för webbens utveckling; W3C:s personal och medlemmar
+            röstade för att fortsätta utveckla XML-baserade ersättningar
+            istället.
+          </p>
+          <img
+            class="inline-image"
+            src="/bilder/Skärmbild 2022-12-02 131342.png"
+            alt="document object model schematic"
+          />
+          <p>
+            Kort därefter tillkännagav Apple, Mozilla och Opera tillsammans sin
+            avsikt att fortsätta arbeta med insatsen under paraplyet av en ny
+            plats kallad WHATWG. En offentlig e-postlista skapades och utkastet
+            flyttades till WHATWG-webbplatsen. Upphovsrätten ändrades därefter
+            för att ägas gemensamt av alla tre leverantörerna och för att
+            tillåta återanvändning av specifikationen.
+          </p>
+          <img
+            class="inline-image"
+            src="/bilder/Skärmbild 2022-12-02 131859.png"
+            alt="document object model schematic"
+          />
+          <p>
+            WHATWG baserades på flera kärnprinciper, särskilt att tekniker måste
+            vara bakåtkompatibla, att specifikationer och implementeringar måste
+            matcha även om detta innebär att man ändrar specifikationen snarare
+            än implementeringarna, och at t specifikationer måste vara
+            tillräckligt detaljerade för att implementeringar kan uppnås.
+            fullständig driftskompatibilitet utan att omvända varandra.
+          </p>
+          <img
+            class="inline-image"
+            src="/bilder/Skärmbild 2022-12-07 101842.png"
+            alt="WHATWG 2022"
+          />
+          <p>
+            Särskilt det senare kravet krävde att omfattningen av
+            HTML5-specifikationen inkluderar vad som tidigare hade specificerats
+            i tre separata dokument: HTML4, XHTML1 och DOM2 HTML. Det innebar
+            också att inkludera betydligt fler detaljer än vad som tidigare
+            ansetts vara normen.
+          </p>
+          <img
+            class="inline-image "
+            src="/bilder/pic_htmltree.gif"
+            alt=""
+          />
+          <p>
+            DOM står för Document Object Model. Det är en teknik som används för
+            att strukturera och manipulera dokument som har skapats med hjälp av
+            markupplångsspråk som HTML och XML. Det gör det möjligt för
+            programmerare att skapa dynamiska webbsidor som kan ändras i realtid
+            baserat på användarinteraktioner och andra händelser. DOM fungerar
+            genom att skapa en trädstruktur av alla element i ett dokument,
+            vilket gör det lättare att navigera och manipulera dessa element på
+            ett strukturerat sätt.
+          </p>
+          <h2 id="Lagar och regler">Lagar och regler</h2>
+          <p>
+            Det finns många lagar och förordningar som rör digital information, men några av de vanligaste inkluderar:
+
+            Lagen om elektroniska identiteter, som reglerar hur elektroniska identiteter ska skapas, verifieras och användas för att identifiera individer och företag på internet
+            Informationssäkerhetslagen, som syftar till att skydda mot oönskade händelser som kan skada företag och organisationers informationssäkerhet
+            Lagen om kriminalisering av köp av sexuella tjänster på internet (Sverige)
+            Finansinspektionens regler för företag som erbjuder finansiella tjänster via internet
+            Lagen om e-postmarknadsföring, som reglerar hur företag får använda e-post för marknadsföring.
+          </p>
+          <p>
+            Det är viktigt att notera att dessa lagar och förordningar kan variera från land till land och kan ändras över tid. Det är därför viktigt för företag och organisationer att hålla sig uppdaterade om de senaste lagarna och förordningarna som gäller för deras verksamhet och verksamhetsområde.
+          </p>
+        </header>
+      </section>
+    </main>
+    <section>
+        <div class="animering">
+            <div><img
+                class="inline-image | ani"
+                src="/bilder/my_computer_icon_0.png"
+                alt=""
+              /></div>
+            <div><img
+                class="inline-image | move | ani"
+                src="/bilder/mail.png"
+                alt=""
+              /></div>
+            <div><img
+                class="inline-image | ani"
+                src="/bilder/2972479.png"
+                alt=""
+              /></div>
+        </div>
+      </div>
+    <form
+        action="https://formsubmit.co/oscar.norback@elev.ga.ntig.se.com"
+        method="POST">
+      <fieldset class="message-box">
+        <legend>Skicka meddelande</legend>
+  
+        <label for="email">E-post:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+  
+        <label for="message">Meddelande:</label>
+        <textarea
+          name="message"
+          id="massage"
+          cols="50"
+          rows="4"
+          placeholder="Meddelande."
+        ></textarea>
+  
+        <input type="submit" class="btn-send" id="send" name="send" />
+      </fieldset>
+    </form>
+    </section>
+    <footer class="footer">
+      <div>
+        <ul class="footer-navigation">
+          <li><a class="nav-link" href="#">Tillbaka till toppen</a></li>
+          <li>
+            <a class="nav-link" href="http://127.0.0.1:5501/uppgift%204/uppgift5.html">Visa alla projekt</a>
+          </li>
+          <li><a class="nav-link" href="https://www.birthday.se/Oscar-Norb%E4ck/Vaxholm/2005/46a7d3e4f5">Om mig</a></li>
+          <li>
+            <a class="nav-link" href="mailto:noname@nodomain.com"
+              >Kontakta</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-text">Copyright &copy; 2022 - Oscar Norbäck</p>
+      </div>
+    </footer>
+  </body>
+</html>

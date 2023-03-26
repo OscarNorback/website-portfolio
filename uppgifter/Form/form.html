@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="form.css" />
+
+    <title>Form-exempel</title>
+  </head>
+  <body>
+    <form
+      action="https://formsubmit.co/oscar.norback@elev.ga.ntig.se.com"
+      method="POST"
+    >
+      <fieldset class="message-box">
+        <legend>Skicka meddelande</legend>
+
+        <label for="email">E-post:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+
+        <label for="message">Meddelande:</label>
+        <textarea
+          name="message"
+          id="massage"
+          cols="50"
+          rows="4"
+          placeholder="Meddelande."
+        ></textarea>
+
+        <input type="submit" class="btn-send" id="send" name="send" />
+      </fieldset>
+    </form>
+  </body>
+</html>

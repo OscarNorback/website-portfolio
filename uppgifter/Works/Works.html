@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORKS</title>
+    <link rel="stylesheet" href="Works.css" />
+    <script src="Works.js" defer></script>
+  </head>
+  <body>
+    <div class="hero">
+      <nav class="menu1">
+        <ul>
+          <li><a href="http://127.0.0.1:5500/uppgift5.html#">HOME</a></li>
+          <li><a href="http://127.0.0.1:5500/om%20mig.html">ABOUT</a></li>
+          <li><a href="https://github.com/OscarNorback">SERVICES</a></li>
+          <li><a href="http://127.0.0.1:5500/Works.html">(WORKS)</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#">Home</a></li>
+        <li><a class="menu__item" href="#box1">Miniräknare</a></li>
+        <li><a class="menu__item" href="#box2">Historia</a></li>
+        <li><a class="menu__item" href="#box3">Flex</a></li>
+        <li><a class="menu__item" href="#box4">Form</a></li>
+        <li><a class="menu__item" href="#Frågor">Frågor</a></li>
+      </ul>
+    </div>
+    <h2 class="text">Mina arbeten</h2>
+    <h3 class="text">Här kommer mina uppgifter när det är klara.</h3>
+
+    <div id="box1" class="box-1 all-box">
+      <a target="_blank" href="http://127.0.0.1:5500/Calc/index.html">
+        <img src="/images/Calc.png" alt="" />
+        <h2>Miniräknare</h2>
+        <p>
+          Detta är min räknare som är ett ut av minna första prochekt i HTML och
+          CSS. Det som gör denna miniräknare spesijäl är att det är första
+          gången jag använde Java script i en uppgift
+        </p>
+      </a>
+      <button class="like-btn" id="like-btn">Like</button>
+      <span id="like-count">0</span>
+    </div>
+    <div id="box2" class="box-2 all-box">
+      <a target="_blank" href="http://127.0.0.1:5500/History/history.html">
+        <img src="/images/historia.png" alt="" />
+        <h2>HTML historia</h2>
+        <p>
+          Detta är min HTMLs historia sida. Det är en sida om HTML och hur allts
+          började. Det är nog den uppgiften jag har lagt ner mest tid på.
+        </p>
+      </a>
+      <button class="like-btn" id="like-btn2">Like</button>
+      <span id="like-count2">0</span>
+    </div>
+    <div id="box3" class="box-3 all-box">
+      <a target="_blank" href="http://127.0.0.1:5500/youtube/youtube.html">
+        <img src="/images/Youtube.png" alt="" />
+        <h2>Flex</h2>
+        <p>
+          Detta är en änkel sida som har en meny och en youtube video som man
+          kan använda. Denna uppgiften var till för att lära sig Flex och förstå
+          hur Flex fungerar.
+        </p>
+      </a>
+      <button class="like-btn" id="like-btn3">Like</button>
+      <span id="like-count3">0</span>
+    </div>
+    <div id="box4" class="box-4 all-box">
+      <a target="_blank" href="http://127.0.0.1:5500/Form/form.html">
+        <img src="/images/Form.png" alt="" />
+        <h2>Form</h2>
+        <p>
+          Detta är nog min favorit hemsida jag har gjort. Det är en chat box där
+          man kan skriva till mig direkt från hemsidan. Varför denna är min
+          favorit för att jag ser mycket användning av denna hemsidan en annan
+          sake man kan ha med denna kod i vilket arbete som hälst.
+        </p>
+      </a>
+      <button class="like-btn" id="like-btn4">Like</button>
+      <span id="like-count4">0</span>
+    </div>
+    <form
+      action="https://formsubmit.co/oscar.norback@elev.ga.ntig.se.com"
+      method="POST"
+    >
+      <fieldset id="Frågor" class="message-box">
+        <legend>Skicka meddelande</legend>
+
+        <label for="email">E-post:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+
+        <label for="message">Meddelande:</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="50"
+          rows="4"
+          placeholder="Meddelande."
+        ></textarea>
+
+        <input type="submit" class="btn-send" id="send" name="send" />
+      </fieldset>
+    </form>
+  </body>
+</html>
